@@ -1,9 +1,9 @@
-<h1>Login here</h1>
-<%= link_to "Signup", signup_path, :class => 'btn btn-primary'%>
-
+<h1>Login here
+<%= link_to "Signup", signup_path, :class => 'pull-right btn btn-primary'%></h1>
+<br><hr>
 <%= form_for :user do |f| %>
- <%= f.email_field :email, placeholder: "Email"%>
- <%= f.password_field :password, placeholder: "Password"%>
+ <%= f.email_field :email, placeholder: "Email"%><br>
+ <%= f.password_field :password, placeholder: "Password"%><br><br>
 
  <%=f.submit 'Login'%>
 <% end %>

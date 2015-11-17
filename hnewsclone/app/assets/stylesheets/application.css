@@ -14,3 +14,16 @@
  *= require_self
  */
 
+*, h1{
+	font-family: 'Arvo', serif;
+}
+.btn{
+	border-radius: 0px;
+	background-color: red;
+	margin: 0 8px 0 8px;
+}
+
+.btn-primary:hover{
+	background-color: black;
+	color: white;
+}

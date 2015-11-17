@@ -1,10 +1,10 @@
-<h1>Create a post</h1>
-
-<%= link_to "Home", root_path, :class => 'btn btn-primary'%>
+<h1>Create a post
+<%= link_to "Home", root_path, :class => 'pull-right btn btn-primary'%></h1>
+<br><hr>
 
 <%= form_for :post do |f| %>
- <%= f.text_field :title, placeholder: "Title"%>
- <%= f.url_field :link, placeholder: "Link"%>
+ <%= f.text_field :title, placeholder: "Title"%><br>
+ <%= f.url_field :link, placeholder: "Link"%><br><br>
  <%=f.submit 'Submit'%>
 <% end %>
 
