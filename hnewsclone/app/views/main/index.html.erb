@@ -1,2 +1,13 @@
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
+<h1>All the posts</h1>
+
+<%= link_to "Add post", add_path, :class => 'btn btn-primary'%>
+<%= link_to "Log Out", logout_path, :class => 'btn btn-primary'%>
+
+<div class="list-group">
+<% @posts.each do |post|%>
+
+<a href="<%=post.link%>" class="list-group-item"><%=post.title%> <br>Posted by <%=post.user.name%> <br>At <%=post.created_at%></a>
+
+<%end%>
+</div>
+

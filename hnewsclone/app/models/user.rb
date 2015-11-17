@@ -5,6 +5,14 @@ class User < ActiveRecord::Base
 	uniqueness: {case_sensitive: false},
 	email: true
 
+	validates :name,
+	presence: true,
+	length: {maximum: 20}
+
+	has_many :post
+
+	# validates :password,
+	# presence: true
 	validates_presence_of :password
 	has_secure_password
 
